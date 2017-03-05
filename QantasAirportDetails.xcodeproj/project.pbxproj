@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50B2328F1E6BB8CB004E15BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B2328E1E6BB8CB004E15BC /* main.m */; };
+		50B232921E6BB8CB004E15BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B232911E6BB8CB004E15BC /* AppDelegate.m */; };
+		50B232951E6BB8CB004E15BC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B232941E6BB8CB004E15BC /* MasterViewController.m */; };
+		50B232981E6BB8CB004E15BC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B232971E6BB8CB004E15BC /* DetailViewController.m */; };
+		50B2329B1E6BB8CB004E15BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B232991E6BB8CB004E15BC /* Main.storyboard */; };
+		50B2329D1E6BB8CB004E15BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B2329C1E6BB8CB004E15BC /* Assets.xcassets */; };
+		50B232A01E6BB8CB004E15BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B2329E1E6BB8CB004E15BC /* LaunchScreen.storyboard */; };
+		50B232AB1E6BB8CB004E15BC /* QantasAirportDetailsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B232AA1E6BB8CB004E15BC /* QantasAirportDetailsTests.m */; };
+		50B232B61E6BB8CB004E15BC /* QantasAirportDetailsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B232B51E6BB8CB004E15BC /* QantasAirportDetailsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50B232A71E6BB8CB004E15BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50B232821E6BB8CB004E15BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50B232891E6BB8CB004E15BC;
+			remoteInfo = QantasAirportDetails;
+		};
+		50B232B21E6BB8CB004E15BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50B232821E6BB8CB004E15BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50B232891E6BB8CB004E15BC;
+			remoteInfo = QantasAirportDetails;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50B2328A1E6BB8CB004E15BC /* QantasAirportDetails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QantasAirportDetails.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B2328E1E6BB8CB004E15BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50B232901E6BB8CB004E15BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50B232911E6BB8CB004E15BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50B232931E6BB8CB004E15BC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		50B232941E6BB8CB004E15BC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		50B232961E6BB8CB004E15BC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		50B232971E6BB8CB004E15BC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		50B2329A1E6BB8CB004E15BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50B2329C1E6BB8CB004E15BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50B2329F1E6BB8CB004E15BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50B232A11E6BB8CB004E15BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B232A61E6BB8CB004E15BC /* QantasAirportDetailsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QantasAirportDetailsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B232AA1E6BB8CB004E15BC /* QantasAirportDetailsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QantasAirportDetailsTests.m; sourceTree = "<group>"; };
+		50B232AC1E6BB8CB004E15BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B232B11E6BB8CB004E15BC /* QantasAirportDetailsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QantasAirportDetailsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B232B51E6BB8CB004E15BC /* QantasAirportDetailsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QantasAirportDetailsUITests.m; sourceTree = "<group>"; };
+		50B232B71E6BB8CB004E15BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50B232871E6BB8CB004E15BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B232A31E6BB8CB004E15BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B232AE1E6BB8CB004E15BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50B232811E6BB8CB004E15BC = {
+			isa = PBXGroup;
+			children = (
+				50B2328C1E6BB8CB004E15BC /* QantasAirportDetails */,
+				50B232A91E6BB8CB004E15BC /* QantasAirportDetailsTests */,
+				50B232B41E6BB8CB004E15BC /* QantasAirportDetailsUITests */,
+				50B2328B1E6BB8CB004E15BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50B2328B1E6BB8CB004E15BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50B2328A1E6BB8CB004E15BC /* QantasAirportDetails.app */,
+				50B232A61E6BB8CB004E15BC /* QantasAirportDetailsTests.xctest */,
+				50B232B11E6BB8CB004E15BC /* QantasAirportDetailsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50B2328C1E6BB8CB004E15BC /* QantasAirportDetails */ = {
+			isa = PBXGroup;
+			children = (
+				50B232901E6BB8CB004E15BC /* AppDelegate.h */,
+				50B232911E6BB8CB004E15BC /* AppDelegate.m */,
+				50B232931E6BB8CB004E15BC /* MasterViewController.h */,
+				50B232941E6BB8CB004E15BC /* MasterViewController.m */,
+				50B232961E6BB8CB004E15BC /* DetailViewController.h */,
+				50B232971E6BB8CB004E15BC /* DetailViewController.m */,
+				50B232991E6BB8CB004E15BC /* Main.storyboard */,
+				50B2329C1E6BB8CB004E15BC /* Assets.xcassets */,
+				50B2329E1E6BB8CB004E15BC /* LaunchScreen.storyboard */,
+				50B232A11E6BB8CB004E15BC /* Info.plist */,
+				50B2328D1E6BB8CB004E15BC /* Supporting Files */,
+			);
+			path = QantasAirportDetails;
+			sourceTree = "<group>";
+		};
+		50B2328D1E6BB8CB004E15BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50B2328E1E6BB8CB004E15BC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50B232A91E6BB8CB004E15BC /* QantasAirportDetailsTests */ = {
+			isa = PBXGroup;
+			children = (
+				50B232AA1E6BB8CB004E15BC /* QantasAirportDetailsTests.m */,
+				50B232AC1E6BB8CB004E15BC /* Info.plist */,
+			);
+			path = QantasAirportDetailsTests;
+			sourceTree = "<group>";
+		};
+		50B232B41E6BB8CB004E15BC /* QantasAirportDetailsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50B232B51E6BB8CB004E15BC /* QantasAirportDetailsUITests.m */,
+				50B232B71E6BB8CB004E15BC /* Info.plist */,
+			);
+			path = QantasAirportDetailsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50B232891E6BB8CB004E15BC /* QantasAirportDetails */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B232BA1E6BB8CB004E15BC /* Build configuration list for PBXNativeTarget "QantasAirportDetails" */;
+			buildPhases = (
+				50B232861E6BB8CB004E15BC /* Sources */,
+				50B232871E6BB8CB004E15BC /* Frameworks */,
+				50B232881E6BB8CB004E15BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QantasAirportDetails;
+			productName = QantasAirportDetails;
+			productReference = 50B2328A1E6BB8CB004E15BC /* QantasAirportDetails.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50B232A51E6BB8CB004E15BC /* QantasAirportDetailsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B232BD1E6BB8CB004E15BC /* Build configuration list for PBXNativeTarget "QantasAirportDetailsTests" */;
+			buildPhases = (
+				50B232A21E6BB8CB004E15BC /* Sources */,
+				50B232A31E6BB8CB004E15BC /* Frameworks */,
+				50B232A41E6BB8CB004E15BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50B232A81E6BB8CB004E15BC /* PBXTargetDependency */,
+			);
+			name = QantasAirportDetailsTests;
+			productName = QantasAirportDetailsTests;
+			productReference = 50B232A61E6BB8CB004E15BC /* QantasAirportDetailsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50B232B01E6BB8CB004E15BC /* QantasAirportDetailsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B232C01E6BB8CB004E15BC /* Build configuration list for PBXNativeTarget "QantasAirportDetailsUITests" */;
+			buildPhases = (
+				50B232AD1E6BB8CB004E15BC /* Sources */,
+				50B232AE1E6BB8CB004E15BC /* Frameworks */,
+				50B232AF1E6BB8CB004E15BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50B232B31E6BB8CB004E15BC /* PBXTargetDependency */,
+			);
+			name = QantasAirportDetailsUITests;
+			productName = QantasAirportDetailsUITests;
+			productReference = 50B232B11E6BB8CB004E15BC /* QantasAirportDetailsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50B232821E6BB8CB004E15BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Tamanna;
+				TargetAttributes = {
+					50B232891E6BB8CB004E15BC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					50B232A51E6BB8CB004E15BC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 50B232891E6BB8CB004E15BC;
+					};
+					50B232B01E6BB8CB004E15BC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 50B232891E6BB8CB004E15BC;
+					};
+				};
+			};
+			buildConfigurationList = 50B232851E6BB8CB004E15BC /* Build configuration list for PBXProject "QantasAirportDetails" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50B232811E6BB8CB004E15BC;
+			productRefGroup = 50B2328B1E6BB8CB004E15BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50B232891E6BB8CB004E15BC /* QantasAirportDetails */,
+				50B232A51E6BB8CB004E15BC /* QantasAirportDetailsTests */,
+				50B232B01E6BB8CB004E15BC /* QantasAirportDetailsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50B232881E6BB8CB004E15BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B232A01E6BB8CB004E15BC /* LaunchScreen.storyboard in Resources */,
+				50B2329D1E6BB8CB004E15BC /* Assets.xcassets in Resources */,
+				50B2329B1E6BB8CB004E15BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B232A41E6BB8CB004E15BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B232AF1E6BB8CB004E15BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50B232861E6BB8CB004E15BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B232921E6BB8CB004E15BC /* AppDelegate.m in Sources */,
+				50B232951E6BB8CB004E15BC /* MasterViewController.m in Sources */,
+				50B2328F1E6BB8CB004E15BC /* main.m in Sources */,
+				50B232981E6BB8CB004E15BC /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B232A21E6BB8CB004E15BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B232AB1E6BB8CB004E15BC /* QantasAirportDetailsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B232AD1E6BB8CB004E15BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B232B61E6BB8CB004E15BC /* QantasAirportDetailsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50B232A81E6BB8CB004E15BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50B232891E6BB8CB004E15BC /* QantasAirportDetails */;
+			targetProxy = 50B232A71E6BB8CB004E15BC /* PBXContainerItemProxy */;
+		};
+		50B232B31E6BB8CB004E15BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50B232891E6BB8CB004E15BC /* QantasAirportDetails */;
+			targetProxy = 50B232B21E6BB8CB004E15BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50B232991E6BB8CB004E15BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50B2329A1E6BB8CB004E15BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50B2329E1E6BB8CB004E15BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50B2329F1E6BB8CB004E15BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50B232B81E6BB8CB004E15BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		50B232B91E6BB8CB004E15BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50B232BB1E6BB8CB004E15BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QantasAirportDetails/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamanna.QantasAirportDetails;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50B232BC1E6BB8CB004E15BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QantasAirportDetails/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamanna.QantasAirportDetails;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50B232BE1E6BB8CB004E15BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QantasAirportDetailsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamanna.QantasAirportDetailsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QantasAirportDetails.app/QantasAirportDetails";
+			};
+			name = Debug;
+		};
+		50B232BF1E6BB8CB004E15BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QantasAirportDetailsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamanna.QantasAirportDetailsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QantasAirportDetails.app/QantasAirportDetails";
+			};
+			name = Release;
+		};
+		50B232C11E6BB8CB004E15BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QantasAirportDetailsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamanna.QantasAirportDetailsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QantasAirportDetails;
+			};
+			name = Debug;
+		};
+		50B232C21E6BB8CB004E15BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QantasAirportDetailsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamanna.QantasAirportDetailsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QantasAirportDetails;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50B232851E6BB8CB004E15BC /* Build configuration list for PBXProject "QantasAirportDetails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B232B81E6BB8CB004E15BC /* Debug */,
+				50B232B91E6BB8CB004E15BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50B232BA1E6BB8CB004E15BC /* Build configuration list for PBXNativeTarget "QantasAirportDetails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B232BB1E6BB8CB004E15BC /* Debug */,
+				50B232BC1E6BB8CB004E15BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50B232BD1E6BB8CB004E15BC /* Build configuration list for PBXNativeTarget "QantasAirportDetailsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B232BE1E6BB8CB004E15BC /* Debug */,
+				50B232BF1E6BB8CB004E15BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50B232C01E6BB8CB004E15BC /* Build configuration list for PBXNativeTarget "QantasAirportDetailsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B232C11E6BB8CB004E15BC /* Debug */,
+				50B232C21E6BB8CB004E15BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50B232821E6BB8CB004E15BC /* Project object */;
+}
