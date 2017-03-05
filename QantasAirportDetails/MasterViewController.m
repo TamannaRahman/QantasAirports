@@ -11,21 +11,70 @@
 
 @interface MasterViewController ()
 
-@property NSMutableArray *objects;
 @end
 
-@implementation MasterViewController
+@implementation MasterViewController{
+    
+    NSDictionary *post;
+    NSMutableArray *airportsDetailArray;
+    NSMutableArray *airportsNameArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    
+    airportsDetailArray = [[NSMutableArray alloc] init];
+    airportsNameArray = [[NSMutableArray alloc] init];
+    [self createActivityIndicator];
+    [self.activityIndicator startAnimating];
+    
+    self.ref = [[FIRDatabase database] referenceFromURL:@"https://qantasairportdetails.firebaseio.com/"];
+    [self.ref keepSynced:YES];
+    
+    [self fetchDataCompletion:^(bool success){
+        
+        if (success && airportsDetailArray) {
+            
+            [self.tableView reloadData];
+            [self.activityIndicator stopAnimating];
+        }
+    }];
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
-    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
+-(void)createActivityIndicator{
+    
+    UIActivityIndicatorView *actInd=[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    
+    actInd.color=[UIColor blackColor];
+    
+    [actInd setCenter:self.view.center];
+    
+    self.activityIndicator=actInd;
+    [self.view addSubview:self.activityIndicator];
+}
+
+-(void)fetchDataCompletion:(void(^)(bool success))completion{
+    
+    
+    [[self.ref queryOrderedByKey] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot *snapshot) {
+        
+        
+        for ( FIRDataSnapshot *child in snapshot.children) {
+            
+            post = child.value;
+        }
+
+        for(NSDictionary *eachAirport in post)
+        {
+            Airport *airports = [[Airport alloc] initWithJSONData:eachAirport];
+            [airportsDetailArray addObject:airports];
+            [airportsNameArray addObject:airports.name];
+        }
+        completion(YES);
+        
+    }];
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
@@ -39,24 +88,17 @@
 }
 
 
-- (void)insertNewObject:(id)sender {
-    if (!self.objects) {
-        self.objects = [[NSMutableArray alloc] init];
-    }
-    [self.objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
-
 
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
+        
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        [controller setDetailItem:object];
+        controller.airportId = airportsDetailArray[indexPath.row];
+        
+            NSLog(@"Is of type: %@", [airportsDetailArray[indexPath.row] class]);
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
@@ -71,15 +113,17 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.objects.count;
+    return airportsDetailArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    Airport *airport = airportsDetailArray[indexPath.row];
+    cell.textLabel.text = airport.name;
+    cell.detailTextLabel.text = airport.country;
+    
     return cell;
 }
 
@@ -90,14 +134,6 @@
 }
 
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }
-}
 
 
 @end

@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@import Firebase;
+#import "Airport.h"
 
 @class DetailViewController;
 
 @interface MasterViewController : UITableViewController
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
+@property (strong, nonatomic) FIRDatabaseReference *ref;
+@property(nonatomic, strong) UIActivityIndicatorView *activityIndicator;
 
 
 @end
